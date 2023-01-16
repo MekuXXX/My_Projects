@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jomhuria&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("../img/background.png");
+  font-family: 'Open Sans', sans-serif;
+}
+.project {
+  width: 75%;
+  background-image: url("img/background.png");
+  border: 4px solid rgb(231, 240, 245);
+  margin: 100px auto;
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.2);
+}
+.layout{
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+
+/* Start menubar */
+.menu-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+}
+.logo{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 40px;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+  display: flex;
+  letter-spacing: 1.6px;
+}
+ul li{
+  margin-right: 40px;
+  line-height: 2.3;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+ul li:hover{
+  color: rgb(145, 62, 222);
+}
+/* End menubar */
+
+
+/* Start Body */
+.body {
+  display: flex;
+  margin: 50px 80px;
+  position: relative;
+}
+.par{
+  margin: 50px 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.name{
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin: 20px 5px;
+}
+h3{
+  color: rgb(145, 62, 222);
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+p{
+  width: 50%;
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+button{
+  width: 140px;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(145, 62, 222);
+  font-size: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: -8px 5px 11px rgba(10, 10, 10, 0.112);
+}
+button:hover{
+  transform: scale(1.2);
+  background-color: rgb(113, 0, 220);
+  box-shadow: -8px 5px 11px rgba(10, 10, 10, 0.271);
+  
+}
+.img-con img{
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: -15px 10px 17px rgba(10, 10, 10, 0.133);
+}
+
+/* End Body */
+
+/* Start Animation */
+
+.animation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.animation div{
+  width: 25px;
+  height: 25px;
+  background-color: rgb(113, 0, 220);
+  margin-left: 5px;
+  animation-name: meku;
+  animation-duration: 0.6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+.animation .br-circle:nth-of-type(2){
+  animation-delay: 0.2s;
+}
+.animation .br-circle:nth-of-type(3){
+  animation-delay: 0.4s;
+}
+@keyframes meku{
+  to {
+    opacity: 0.3;
+    transform: translateY(-25px);
+  }
+}
+/* End Animation */
+
+
+
+
+
+
+
+
+
+/* My framework */
+.br-5{
+  border-radius: 5px;
+}
+.br-10{
+  border-radius: 10px;
+}
+.br-circle{
+  border-radius: 50%;
+}
